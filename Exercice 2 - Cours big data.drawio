@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-24T08:36:17.586Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="cTFKv9_xGBQNh6vvcv7g" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-24T08:51:14.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="VtJWWWtuETY-p7G8OVZ4" version="13.7.5" type="github">
   <diagram id="vQyqBrsFgkDb8cZjNnJ9" name="Page-1">
     <mxGraphModel dx="1673" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -86,11 +86,23 @@
         <mxCell id="We9ft9rKSuaxdygpwV60-52" value="1..n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="420" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="We9ft9rKSuaxdygpwV60-53" value="2,3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="We9ft9rKSuaxdygpwV60-53" value="1.n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="340" width="30" height="20" as="geometry" />
         </mxCell>
         <mxCell id="We9ft9rKSuaxdygpwV60-54" value="1.n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="750" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="We9ft9rKSuaxdygpwV60-55" value="MLD :&amp;nbsp;&lt;br&gt;&lt;br&gt;restaurant (&lt;u&gt;num_siret&lt;/u&gt;, nom, adresse, nb_table_max, statut, #id_menu)&lt;br&gt;salarié (&lt;u&gt;id&lt;/u&gt;, nom, prenom, salaire, #num_siret)&lt;br&gt;client (&lt;u&gt;id&lt;/u&gt;, nom, prenom, budget_max)&lt;br&gt;repas (&lt;u&gt;#num_siret, #id&lt;/u&gt;, prix, date)&lt;br&gt;menu (&lt;u&gt;id_menu&lt;/u&gt;, nom, prix)&lt;br&gt;restau_menu (&lt;u&gt;#restau, #menu&lt;/u&gt;)" style="html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="960" width="680" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="We9ft9rKSuaxdygpwV60-56" value="restau_menu" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="770" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="We9ft9rKSuaxdygpwV60-60" value="" style="endArrow=block;startArrow=block;endFill=1;startFill=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="790" as="sourcePoint" />
+            <mxPoint x="370" y="680" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
